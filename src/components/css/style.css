@@ -1,0 +1,1624 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.wrapperDiv{
+    position: relative;
+}
+
+.searchBar{
+    width: 100%;
+    height: 13vh;
+    background-color: white;
+    position: fixed;
+    top: 0%;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchInp{
+    width: 45%;
+    height: 4rem;
+    padding-left: 1.5%;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #000;
+    border: 1px solid #BBBDBF;
+}
+
+.searchInp:focus{
+    outline: none;
+}
+
+.searchIcon{
+    font-size: 22px;
+    position: relative;
+    left: -3.5rem;
+}
+
+.icons:hover{
+    cursor: pointer;
+    color: #B2C123;
+}
+
+.closeIcon1{
+    font-size: 22px;
+    margin-left: -1rem;
+}
+
+.closeIcon1:hover{
+    cursor: pointer;
+    color: #B2C123;
+}
+
+.coverDiv{
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)) !important;
+    position: absolute;
+    top: 0%;
+    z-index: 100;
+}
+
+.preNav{
+    width: 100% !important;
+    height: auto !important;
+}
+
+.counterMainDiv{
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.counterDiv{
+    width: 20px;
+    height: 20px; 
+    background-color: #B2C123;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    right: -0.8rem;
+    top: -0.8rem;
+}
+
+.preNavCol{
+    height: 4vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F9F9;
+}
+
+.preNavContent{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #272727;
+}
+
+.positonSticky{
+    position: sticky;
+    top: 0%;
+    z-index: 100;
+}
+
+.navBarRow{
+    height: 9vh;
+    background-color: white;
+    position: relative;
+    top: -2px;
+    border-bottom: 1px solid #F3F3F3;
+}
+
+.navUl{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 1;
+    padding: 0% 22rem;
+    box-sizing: border-box;
+    text-align: center;
+    text-align: center;
+    position: relative;
+}
+
+.navUl > li,.brandsLink{
+    width: fit-content;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    margin-left: 2.5rem;
+    font-weight: 400;
+    color: #272727 !important;
+    line-height: 2.4rem;
+}
+
+.navUl > li:hover{
+    cursor: pointer;
+}
+
+.brandsLink{
+    text-decoration: none !important;
+}
+
+.newApparelLi:hover .newApparelUl{
+    visibility: visible;
+}
+
+.newApparelUl{
+    width: 30rem;
+    height: auto;
+    padding: 0px 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+    border: 1px solid #BBBDBF;
+    position: absolute;
+    top: 90%;
+    left: 21.5%;
+    cursor: default;
+    background-color: white;
+    visibility: hidden;
+}
+
+.li1contentContainer{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.li2contentContainer{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.li3contentContainer{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.li4contentContainer{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.li1contentContainer:hover .liH1{
+    font-weight: 700;
+}
+
+.li2contentContainer:hover .liH1{
+    font-weight: 700;
+}
+
+.li3contentContainer:hover .liH1{
+    font-weight: 700;
+}
+
+.li4contentContainer:hover .liH1{
+    font-weight: 700;
+}
+
+.leftSide{
+    width: 80px;
+    height: 80px;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.rightSide{
+    width: auto;
+    height: auto;
+    margin-left: 1.5rem;
+}
+
+.liH1{
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menLiText:hover .menUl{
+    visibility: visible;
+}
+
+.womenLiText:hover .womenUl{
+    visibility: visible;
+}
+
+.girlsLiText:hover .girlsUl{
+    visibility: visible;
+}
+
+.boysLiText:hover .boysUl{
+    visibility: visible;
+}
+
+.brandsLink:hover .brandsUl{
+    visibility: visible;
+}
+
+.menUl,
+.womenUl,
+.girlsUl,
+.boysUl,
+.brandsUl{
+    width: 157.5%;
+    height: auto;
+    padding: 0% 10rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+    position: absolute;
+    top: 95%;
+    left: -30%;
+    background-color: white;
+    cursor: default;
+    visibility: hidden;
+    border: 1px solid #BBBDBF;
+}
+
+.brandsUl{
+    padding: 1% 28rem;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+}
+
+.brandsTitleLi{
+    width: 100%;
+    height: auto;
+    text-transform: capitalize;
+    margin: 1rem 0%;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.brandsTitleLi:hover{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.menContentContainer,
+.womenContentContainer,
+.girlsContentContainer,
+.boysContentContainer{
+    width: 29.7rem;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 5rem;
+    box-sizing: border-box;
+    margin-top: 2rem;
+    cursor: pointer;
+    background-color: white;
+}
+
+.menRightSide,
+.womenRightSide,
+.girlsRightSide,
+.boysRightSide{
+    text-transform: uppercase;
+    margin-left: 2rem;
+}
+
+.grandSubulFootwear,
+.grandSubulApparel, 
+.grandSubulAccessories,
+.grandSubulBags{
+    width: 75%;
+    height: 100%;
+    padding: 5rem 0rem;
+    box-sizing: border-box;
+    position: absolute;
+    left: 39.6rem;
+    top: 0% ;
+    box-sizing: border-box;
+    border-left: 1px solid #BBBDBF;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: center;
+    background-color: white;
+    visibility: hidden;
+    cursor: default;
+}
+
+.menContentContainer:hover .grandSubulFootwear{
+    visibility: visible;
+}
+
+.menContentContainer:hover .grandSubulApparel{
+    visibility: visible;
+}
+
+.menContentContainer:hover .grandSubulAccessories{
+    visibility: visible;
+}
+
+.menContentContainer:hover .grandSubulBags{
+    visibility: visible;
+}
+
+.womenContentContainer:hover .grandSubulFootwear{
+    visibility: visible;
+}
+
+.womenContentContainer:hover .grandSubulApparel{
+    visibility: visible;
+}
+
+.womenContentContainer:hover .grandSubulAccessories{
+    visibility: visible;
+}
+
+.womenContentContainer:hover .grandSubulBags{
+    visibility: visible;
+}
+
+.girlsContentContainer:hover .grandSubulFootwear{
+    visibility: visible;
+}
+
+.girlsContentContainer:hover .grandSubulApparel{
+    visibility: visible;
+}
+
+.girlsContentContainer:hover .grandSubulAccessories{
+    visibility: visible;
+}
+
+.girlsContentContainer:hover .grandSubulBags{
+    visibility: visible;
+}
+
+.boysContentContainer:hover .grandSubulFootwear{
+    visibility: visible;
+}
+
+.boysContentContainer:hover .grandSubulApparel{
+    visibility: visible;
+}
+
+.boysContentContainer:hover .grandSubulAccessories{
+    visibility: visible;
+}
+
+.boysContentContainer:hover .grandSubulBags{
+    visibility: visible;
+}
+
+.subTitleContentDiv{
+    width: auto;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.subTitleContentDiv:hover .menLi{
+    font-weight: 700;
+}
+
+.menContentContainer:hover .defaultFontWeight{
+    font-weight: 700;
+}
+
+.womenContentContainer:hover .defaultFontWeight{
+    font-weight: 700 ;
+}
+
+.girlsContentContainer:hover .defaultFontWeight{
+    font-weight: 700 ;
+}
+
+.boysContentContainer:hover .defaultFontWeight{
+    font-weight: 700 ;
+}
+
+.menLi{
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.iconContainer{
+    padding: 0% 3%;
+    box-sizing: border-box;
+}
+
+.icons{
+    font-size: 20px;
+    margin-left:1.5rem;
+}
+
+.menuIcon{
+    font-size: 25px;
+    position: absolute;
+    left: 3%;
+    display: none;
+    cursor: pointer;
+}
+
+.navBarSideBar,
+.navBarSideBar1,
+.navBarSideBar2,
+.navBarSideBar3,
+.navBarSideBar4,
+.navBarSideBar5,
+.navBarSideBar6,
+.navBarSideBar7,
+.navBarSideBar8,
+.navBarSideBar9,
+.navBarSideBar10,
+.navBarSideBar11,
+.navBarSideBar12,
+.navBarSideBar13,
+.navBarSideBar14,
+.navBarSideBar15,
+.navBarSideBar16,
+.navBarSideBar17,
+.navBarSideBar18,
+.navBarSideBar19,
+.navBarSideBar20,
+.navBarSideBar21,
+.navBarSideBar22{
+    width: 75%;
+    height: 100%;
+    margin-left: 0%;
+    position: fixed;
+    top: 0%;
+    left: -100%;
+    z-index: 1000;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.navBarSideBar1,
+.navBarSideBar2,
+.navBarSideBar3,
+.navBarSideBar4,
+.navBarSideBar5,
+.navBarSideBar6,
+.navBarSideBar7,
+.navBarSideBar8,
+.navBarSideBar9,
+.navBarSideBar10,
+.navBarSideBar11,
+.navBarSideBar12,
+.navBarSideBar13,
+.navBarSideBar14,
+.navBarSideBar15,
+.navBarSideBar16,
+.navBarSideBar17,
+.navBarSideBar18,
+.navBarSideBar19,
+.navBarSideBar20,
+.navBarSideBar21,
+.navBarSideBar22{
+    top: 20rem;
+}
+
+.newApperalText{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 1.6rem;
+    margin-left: 3.5rem;
+    text-transform: capitalize;
+}
+
+.backContainer:hover .backIcon{
+    color: #B2C123;
+}
+
+.backContainer{
+    height: 10rem;
+    border-left: 1px solid #BBBDBF;
+}
+
+.backContainer2{
+    margin-bottom: 3rem !important;
+}
+
+.navImg1:hover .mobileH1{
+    color: #B2C123;
+}
+
+.mobileH2{
+    font-weight: 400 !important;
+    font-size: 3rem !important;
+}
+
+.navImg2:hover .mobileH1{
+    color: #B2C123;
+}
+
+.loginBtn{
+    width: 27rem;
+    height: 7rem;
+    border: none;
+    outline: none;
+    font-size: 2.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    position: relative;
+    padding-left: 2rem;
+    box-sizing: border-box;
+}
+
+.loginBtn:hover{
+    color: #B2C123;
+}
+
+.sliderControlWidth{
+    width: 5.5rem;
+    height: 100%;
+}
+
+.navImg1,.navImg2{
+    width: 100%;
+    height: 13rem;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 8rem !important;
+    box-sizing: border-box !important;
+    margin-top: 2rem;
+}
+
+.navImg2{
+    height: 9rem;
+    margin-top: 1rem;
+}
+
+.mobileH1{
+    font-size: 3.2rem ;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.closeIcon{
+    font-size: 3rem;
+}
+
+.backIcon{
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+}
+
+.navMobItems{
+    padding: 0% 11rem !important;
+    box-sizing: border-box !important;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-top: 3rem !important;
+    box-sizing: border-box;
+    border-top: 1px solid lightgrey;
+    /* flex : 1 1; */
+}
+
+.navMobItems > p{
+    width: fit-content;
+    font-size: 2.5rem;
+    color: #272727;
+    font-weight: 400;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.SliderIcon{
+    font-size: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    background-color: white;
+}
+
+.sliderBtn{
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    margin-left: 1.2rem;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #272727;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.sliderBtn:hover{
+    color: #fff;
+    background-color: #B2C123;
+    cursor: pointer;
+}
+
+.spaceDiv{
+    width: 100%;
+    height: 2rem;
+}
+
+.img1{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.img2{
+    overflow: hidden;
+}
+
+.img2:hover .img1{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.collectionHeading{
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #2D2D2D;
+    line-height: 6.6rem;
+    text-transform: uppercase;
+}
+
+.collectionRow1{
+    padding: 0px 0rem;
+    box-sizing: border-box;
+}
+
+.collectionUl{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.collectionUl > li{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #272727;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 4rem;
+    padding-bottom: 0.8rem;
+    box-sizing: border-box;
+}
+
+.collectionUl > li:hover{
+    cursor: pointer;
+}
+
+.womanImg{
+    width: 100%;
+    height: 60rem;
+}
+
+.mainColumn{
+    overflow: hidden;
+}
+
+.mainColumn:hover .scaleImgEffect{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.mainColumn{
+    position: relative;
+    top: 0%;
+}
+
+.activeLi{
+    border-bottom: 3px solid #B2C123;
+    color: #B2C123 !important;
+}
+
+.opacityDiv{
+    width: 100%;
+    height: 15rem;
+    position: absolute;
+    bottom: 120%;
+    z-index: 10;
+    background-color: #000;
+    opacity: 0.75;
+    padding: 0rem 5rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.imgHeading{
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 41px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.mainColumn:hover .opacityDiv {
+    bottom: 0%;
+}
+
+.title{
+    margin-bottom: 20px;  
+    padding:20px  
+}  
+
+.img{  
+    width:100%;
+    height: 100%;  
+}
+
+.itemsDiv,.itemsDiv1{
+    width: 100%;
+    height: 50rem;
+    overflow: hidden;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.itemsDiv1{
+    width: 80%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewAllBtn{
+    width: 11rem;
+    height: 45px;
+    border: none;
+    outline: none;
+    background-color: #B2C123;
+    color: white;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.viewAllBtn:focus{
+    outline: none;
+}
+
+.viewAllBtn:hover{
+    cursor: pointer;
+    background-color: #d1e043;
+}
+
+.colorImgContainer{
+    width: 100%;
+    /* height: 100%; */
+    display: flex !important;
+    justify-content: start !important;
+    align-items: center !important;
+}
+
+.colorImg{
+    width: 50px !important;
+    height: 65px !important;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    margin-left: 0.5rem;
+}
+
+.colorImg:hover{
+    cursor: pointer;    
+}
+
+.colorImg:focus{
+    outline: none;
+}
+
+.sliderDiv .owl-nav {
+    width: 100%;
+    position: absolute;
+    top: 20.5rem;
+    left: 0%;
+}
+
+.sliderDiv .owl-nav img {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    padding: 1rem !important;
+    box-sizing: border-box !important;
+}
+
+.sliderDiv .owl-carousel{
+    padding: 1% 3% !important;
+    box-sizing: border-box ;
+    margin: auto;
+}
+
+.sliderDiv .owl-nav .owl-prev{
+    position: absolute;
+    left: -0.5rem;
+}
+
+.sliderDiv .owl-nav .owl-next{
+    position: absolute;
+    right: -0.5rem;
+}
+
+.sliderDiv .owl-nav .owl-prev, .sliderDiv .owl-nav .owl-next {
+    outline: none;
+    transition: all .5s ease;
+}
+
+.sliderDiv .owl-nav .owl-prev:hover, .sliderDiv .owl-nav .owl-next:hover {
+    background: none !important;
+    outline: none !important;
+    opacity: 1;
+}
+
+.collectionHeading1{
+    position: relative;
+    left: 8rem;
+}
+
+.collectionUl1{
+    padding-right: 6rem;
+    box-sizing: border-box;
+}
+
+.itemName{
+    width: fit-content;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: 400;
+    margin-top: 0rem;
+    color: #292929;
+    cursor: pointer;
+}
+
+.itemSubName{
+    width: fit-content;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: #707070;
+}
+
+.itemPrice{
+    width: fit-content;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: #6a6a6a;
+}
+
+.brandSliderDiv .owl-nav {
+    position: absolute;
+    top: -6rem;
+    right: 7rem;
+}
+
+.brandSliderDiv .owl-nav img {
+    width: 35px;
+    height: 35px;
+    background-color: #F3F3F3;
+    padding: 1rem !important;
+    box-sizing: border-box !important;
+}
+
+.brandSliderDiv .owl-carousel{
+    width: 100% !important;
+    margin-left: 1% !important;
+    padding: 3% 1.5rem !important;
+    padding-right: 2rem !important;
+    box-sizing: border-box ;
+}
+
+.brandSliderDiv .owl-nav .owl-prev, .brandSliderDiv .owl-nav .owl-next {
+    outline: none;
+    transition: all .5s ease;
+}
+
+.brandSliderDiv .owl-nav .owl-prev:hover, .brandSliderDiv .owl-nav .owl-next:hover {
+    background: none !important;
+    outline: none !important;
+    opacity: 1;
+}
+
+.brandsHeading{
+    margin-top: 0%;
+    position: relative;
+    top: 1.5rem;
+    left: 8rem;
+}
+
+.logoDiv{
+    width: 210px;
+    height: 210px !important;
+}
+
+.logoDiv img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.logoDiv:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+}
+
+.brandRow2{
+    padding: 2.5% 10rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.brandPara1{
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 1.25rem;
+    line-height: 1.6rem;
+    color: #828282;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.brandPara2{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #4f4f4f;
+    line-height: 3.1rem;
+    margin-top: 1rem;
+}
+
+.brandPara3{
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: #707070;
+    margin-top: 1rem;
+}
+
+.brandPara4{
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: #707070;
+}
+
+.emailInp{
+    width: 23rem;
+    height: 4rem;
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    color: #000;
+    border: 1px solid #BBBDBF;
+    margin-top: -1.5rem;
+}
+
+.emailInp::placeholder{
+    color: #828282;
+}
+
+.emailInp:focus{
+    outline: none;
+}
+
+.subscribeBtn{
+    width: 12rem;
+    height: 4rem;
+    background-color: #B2C123;
+    color: white;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+    transition: all .3s;
+}
+
+.subscribeBtn:hover{
+    cursor: pointer;
+    background-color: #656e15;
+}
+
+.subscribeBtn:focus{
+    outline: none;
+}
+
+.newLetterDiv{
+    height: 12rem;
+}
+
+.brandIconContainer{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 7.8rem;
+    margin: auto;
+}
+
+.footerImg1{
+    width: 4rem;
+    height: 2.5rem;
+}
+
+.footerImg2{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.footerImg3{
+    width: 3.7rem;
+    height: 3.5rem;
+}
+
+.footerItemsDiv{
+    width: 100%;
+    height: auto;
+    padding: 3rem 5rem !important;
+    box-sizing: border-box;
+    background-color: #f6f6f6;
+}
+
+.footerItemsChildDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10rem;
+    box-sizing: border-box;
+}
+
+.footerItemsChildDiv > p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #000;
+    margin-left: 3rem;
+    line-height: 1.2rem;
+    transition-duration: all .3s;
+}
+
+.footerItemsChildDiv > p:hover{
+    text-decoration: underline;
+    color: #B2C123;
+    cursor: pointer;
+}
+
+.footerCopyRightDiv{
+    width: 100%;
+    height: 3.5rem;
+    background-color: #404040;
+    overflow: hidden;
+}
+
+.footerCopyRightChildDiv{
+    width: 100%;
+    height: 100%;
+    padding-top: 1rem !important;
+    padding-left: 17.5rem !important;
+    box-sizing: border-box;
+}
+
+.footerCopyRightChildDiv > p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: white;
+}
+
+.homeIcon{
+    font-size: 2rem;
+    color: #292929;
+}
+
+.homePara{
+    color: #292929;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.mobileFooter:hover .homeIcon{
+    color: #B2C123 !important;
+    cursor: pointer;
+}
+
+.mobileFooter:hover .homePara{
+    color: #B2C123 !important;
+    cursor: pointer;
+}
+
+.activeButton{
+    color: #B2C123 !important;
+    cursor: pointer;
+}
+
+.loginSideBar,.cartSideBar{
+    width: 20%;
+    height: 100%;
+    margin-left: 0%;
+    position: fixed;
+    top: 0%;
+    right:  -100%;
+    z-index: 1000;
+    background-color: white;
+    transition: all 0.5s;
+    padding: 0% 2rem;
+    box-sizing: border-box;
+}
+
+.closeIcon2{
+    font-size: 2rem;
+}
+
+.closeText{
+    font-size: 1.2rem;
+    margin-top: 0.1rem;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.closeContainer{
+    padding-top: 1.5rem;
+    padding-right: 2rem;
+    box-sizing: border-box;
+}
+
+.closeContainer:hover{
+    cursor: pointer;
+}
+
+.closeContainer:hover .closeIcon2{
+    color: #B2C123;
+}
+
+.closeContainer:hover .closeText{
+    color: #B2C123;
+}
+
+.loginRow2{
+    margin-top: 2.5rem;
+}
+
+.loginRow2 hr{
+    margin-top: 1.8rem;
+}
+
+.loginHeading{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    color: #464646;
+}
+
+.emailLbl, .passwordLbl{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #464646;
+    line-height: 2rem;
+}
+
+.passwordLbl{
+    margin-top: 1.5rem;
+}
+
+.emailInp{
+    margin-top: 0rem;
+}
+
+.emailInp{
+    width: 28rem;
+    height: 4rem;
+}
+
+.loginBtn1{
+    width: 28rem;
+    height: 4rem;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background-color: #464646;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 400;
+    transition: all .3s;
+    letter-spacing: 1px;
+}
+
+.loginBtn1:hover{
+    cursor: pointer;
+    color: #B2C123;
+}
+
+.loginDivForgotPara{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #464646;
+    line-height: 2.1rem;
+    text-align: center;
+    transition: all .3s;
+}
+
+.loginDivForgotPara:hover{
+    color: #B2C123;
+    cursor: pointer;
+}
+
+.imgContainer1{
+    width: 100%;
+    height: 65%;
+    position: relative;
+}
+
+.imgContainer1::before{
+    content: '';
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.imgContainer1:hover::before{
+    height: 100%;
+}
+
+.addCartBtn{
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    border: none;
+    outline: none;
+    background-color: #B2C123;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: all .3s;
+    display: none;
+    cursor: pointer;
+    z-index: 50;
+}
+
+.itemsDiv:hover .addCartBtn{
+    display: block;
+}
+
+.img:hover{
+    cursor: pointer;
+}
+
+.mobileNavigationBar{
+    position: sticky;
+    bottom: 0%;
+    left: 0%;
+    z-index: 100;
+    background-color: white;
+}
+
+@keyframes inAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.endSeasonDiv{
+    width: 100%;
+    height: 65rem;
+}
+
+.imageSize{
+    margin-top: -10rem;
+}
+
+.sliderContiner{
+    width: 100%;
+    height: max-content;
+    border: 1px solid #000;
+}
+
+.slide1{
+    width: 17rem;
+    height: 43rem;
+    border: 1px solid #000;
+}
+
+button:focus, input:focus{
+    outline: none;
+}
+
+.brandLogoSize{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.gridRow2{
+    padding-top: 5rem !important;
+    box-sizing: border-box !important;
+}
+
+.brandTitleH1{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #808080;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+.brandRow3{
+    margin-top: 2rem;
+}
+
+/* .accordionColumn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordianDiv{
+    width: 100%;
+    height: auto;
+    border: 1px solid #000;
+    position: relative;
+    padding: 2rem;
+    box-sizing: border-box;
+} */
+
+@media only screen and (max-width: 1535px) {
+    .navUl{
+        padding: 0% 15rem;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .emailInp{
+        width: 12rem;
+    }
+
+    .subscribeBtn{
+        width: 10rem;
+    }
+
+    .iconContainer{
+        padding: 0% 1%;
+    }
+}
+
+@media only screen and (max-width: 1175px) {
+    .navUl{
+        padding: 0% 7rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .opacityDiv{
+        padding: 0% 2rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    html{
+        font-size: 55%;       
+    } 
+}
+
+@media only screen and (max-width: 902px) {
+    .navUl{
+        padding: 0% 2rem;
+    }
+    .iconContainer{
+        padding: 0% ;
+    }
+}
+
+@media only screen and (max-width: 829px) {
+
+    .iconContainer{
+        padding: 0% 1rem;
+    }
+
+    .sliderBtn{
+        padding: 0.5rem 1rem;
+    }
+
+    .brandSliderDiv .owl-carousel{
+        padding: 6rem 0% !important;
+        padding-left: 2rem !important; 
+    }
+
+    .footerItemsChildDiv{
+        padding-left: 5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .emailInp{
+        width: 27rem;
+    }
+    .subscribeBtn{
+        width: 12rem;
+    }
+    .brandPara4{
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .brandIconContainer{
+        top: 8.5rem;
+    }
+
+    .logoDiv{
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .sliderDiv .owl-nav img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .brandSliderDiv .owl-nav img{
+        width: 30px;
+        height: 30px;
+    }
+    
+}
+
+@media only screen and (max-width: 766px) {
+    .iconContainer{
+        padding: 0% 2rem;
+    } 
+
+    .menuIcon{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 657px) {
+    html{
+        font-size: 35%;       
+    } 
+    .colorImg{
+        width: 35px !important;
+        height: 45px !important;
+    }
+}
+
+@media only screen and (max-width: 418px) {
+    html{
+        font-size: 25%;       
+    } 
+
+    .opacityDiv{
+        height: 30rem;
+    }
+
+    .opacityDiv:hover{
+        top: 25rem;
+    }
+    .sliderDiv .owl-nav img {
+        width: 25px;
+        height: 25px;
+    }
+    .colorImg{
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .brandSliderDiv .owl-carousel{
+        padding: 20rem 0% !important;
+        padding-left: 10rem !important; 
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .logo{
+        width: 120px !important;
+        height: 35px !important;
+        margin-left: 15% !important;
+    }
+    .colorImg{
+        width: 20px !important;
+        height: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 228px) {
+    html{
+        font-size: 15%;       
+    }
+    .logo{
+        margin-left: 2rem !important;
+    }
+    .sliderDiv .owl-nav img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .brandSliderDiv .owl-nav img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .colorImg{
+        width: 10px !important;
+        height: 10px !important;
+    }
+}
+
